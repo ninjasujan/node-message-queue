@@ -7,8 +7,8 @@ import Queue from "./jobs/http.queue.js";
 
 // Middleware - to keep count of request hit
 app.use((request, response, next) => {
-  Queue.apiQueue.add({ count: 1 });
-  next();
+    Queue.apiQueue.add({ count: 1 });
+    next();
 });
 
 // Setup Routes
@@ -18,5 +18,5 @@ app.use("/api", route);
 Redis.init();
 
 app.listen(Locals.config().SERVER_PORT, () => {
-  console.info("[SERVER RUNNING]", Locals.config().SERVER_PORT);
+    console.info("[SERVER RUNNING]", Locals.config().SERVER_PORT);
 });
