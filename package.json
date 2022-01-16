@@ -4,7 +4,8 @@
     "dotenv": "^12.0.3",
     "expess": "^0.0.1-security",
     "express": "^4.17.2",
-    "ioredis": "^4.28.3"
+    "ioredis": "^4.28.3",
+    "log4js": "^6.3.0"
   },
   "type": "module",
   "name": "message-queue",
